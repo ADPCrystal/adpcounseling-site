@@ -1,122 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A Different Path Counseling, PLLC | Monroe, WA</title>
-<meta name="description" content="Counseling, peer support and behavior support programs in Monroe, Washington. Now accepting new counseling and peer support clients.">
+<meta name="description" content="Counseling, peer support, and behavior support programs in Monroe, Washington, in person and by telehealth. Now accepting new clients.">
 <link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--g:#1f5e46;--g2:#2f7d5e;--bg:#f6f8f5;--ink:#1d2a24;--mut:#55655d;--line:#dbe4dd}
+:root{--forest:#17433a;--pine:#2b6b57;--mist:#e8f0ec;--river:#4f7c8a;--dawn:#f0b35a;--ink:#17231f;--paper:#fbfcfb;--line:#cfdcd6;--mut:#4d5f58}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
-a{color:var(--g2)}
-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
-.bar{max-width:1050px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--g);font-weight:700}
-.brand img{width:44px;height:44px;border-radius:50%}
-nav{margin-left:auto;display:flex;gap:4px 14px;flex-wrap:wrap;font-size:.95rem}
-nav a{text-decoration:none;color:var(--ink)}
-nav a:hover{color:var(--g2)}
-.crisis{background:#fff4e5;border-bottom:1px solid #f3d9ae;font-size:.9rem;text-align:center;padding:6px 12px}
-.hero{background:linear-gradient(135deg,rgba(31,94,70,.88),rgba(47,125,90,.8)),url(hero.jpg) center/cover;color:#fff;text-align:center;padding:64px 16px}
-.hero h1{margin:0 0 8px;font-size:clamp(2rem,5vw,3rem)}
-.hero p{margin:6px auto;max-width:640px;font-size:1.1rem}
-.btn{display:inline-block;margin-top:14px;background:#fff;color:var(--g);padding:10px 22px;border-radius:999px;font-weight:700;text-decoration:none}
-section{padding:46px 16px}
-section:nth-of-type(even){background:var(--bg)}
-.w{max-width:1050px;margin:0 auto}
-h2{color:var(--g);margin:0 0 14px;font-size:1.7rem}
-h3{margin:0 0 4px;color:var(--ink)}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
-.role{color:var(--mut);font-size:.92rem;margin:0 0 8px}
-table{border-collapse:collapse;width:100%;background:#fff}
-th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--bg)}
-.note{color:var(--mut);font-size:.92rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0}
+a{color:var(--pine)}
+:focus-visible{outline:3px solid var(--dawn);outline-offset:3px}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:absolute;inset:0 0 auto 0;z-index:10;color:#fff}
+.bar{display:flex;align-items:center;gap:18px;padding:14px 20px;max-width:1180px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:Fraunces,serif;font-weight:700;font-size:1.05rem}
+.brand img{width:46px;height:46px;border-radius:50%;border:2px solid #fff}
+nav{margin-left:auto;display:flex;gap:6px 18px;flex-wrap:wrap;font-size:.95rem}
+nav a{color:#fff;text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--dawn)}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(100deg,rgba(14,46,39,.92) 15%,rgba(14,46,39,.35) 75%),url(hero.jpg) center/cover;overflow:hidden}
+.hero .w{width:100%;padding-top:150px;padding-bottom:110px;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);max-width:12ch;font-weight:700}
+.hero p{max-width:34rem;font-size:1.2rem;margin:18px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--dawn);color:#2a1d05}
+.btn.alt{background:transparent;color:#fff;border:2px solid #fff}
+.btn:hover{filter:brightness(1.08)}
+.trail{position:absolute;left:0;bottom:0;width:100%;height:150px;z-index:1}
+.trail path{fill:none;stroke:var(--dawn);stroke-width:3;stroke-dasharray:6 9;stroke-linecap:round;stroke-dashoffset:2400;animation:draw 3.2s .3s ease-out forwards}
+.trail circle{fill:var(--dawn);opacity:0;animation:pop .4s 3.3s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{opacity:1}}
+.crisis{background:var(--dawn);color:#2a1d05;text-align:center;padding:10px 16px;font-size:.98rem}
+section{padding:76px 0}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);color:var(--forest);margin-bottom:12px}
+.lead{font-size:1.2rem;max-width:42rem;color:var(--mut)}
+.band{background:var(--mist)}
+.about{display:grid;gap:28px;grid-template-columns:1.2fr 1fr;align-items:center}
+.values{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.values span{background:var(--mist);border-radius:999px;padding:8px 18px;font-weight:500;color:var(--forest)}
+.svc{list-style:none;margin:30px 0 0;padding:0;border-top:1px solid var(--line)}
+.svc li{display:grid;grid-template-columns:1fr auto;gap:6px 20px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line)}
+.svc strong{font-family:Fraunces,serif;font-size:1.5rem;font-weight:500;color:var(--forest)}
+.svc span{color:var(--river);font-weight:500}
+.people{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));margin-top:30px}
+.person{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 2px 14px rgba(23,67,58,.12);display:flex;flex-direction:column}
+.person img{width:100%;aspect-ratio:4/4.4;object-fit:cover;object-position:top}
+.pi{padding:18px 20px 20px}
+.pi h3{font-size:1.3rem;color:var(--forest)}
+.role{color:var(--river);font-weight:500;margin:2px 0 10px}
+summary{cursor:pointer;color:var(--pine);font-weight:700;padding:6px 0}
+.bio{font-size:.98rem;margin-top:8px}
+.progs{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));margin-top:28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{font-size:1.35rem;color:var(--forest);margin-bottom:10px}
 ul{padding-left:20px}
-.ph{width:100%;max-width:220px;aspect-ratio:1/1;object-fit:cover;object-position:top;border-radius:50%;display:block;margin:0 auto 12px}
-footer{background:var(--g);color:#fff;padding:26px 16px;text-align:center}
-footer a{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:10px 0 24px}
+.chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:.95rem}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:#fff;min-width:560px}
+th,td{border-bottom:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top}
+th{background:var(--forest);color:#fff;font-weight:500}
+td:nth-child(2){font-family:Fraunces,serif;font-weight:700;font-size:1.2rem;color:var(--forest)}
+.note{color:var(--mut);font-size:.93rem}
+.dark{background:var(--forest);color:#fff}
+.dark h2{color:#fff} .dark .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)} .dark .card h3{color:var(--dawn)}
+.dark a{color:var(--dawn)}
+.links{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}
+.links a{display:block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 20px;text-decoration:none;font-weight:500}
+.contact{display:grid;gap:28px;grid-template-columns:1fr 1fr;align-items:start}
+.bigtel{font-family:Fraunces,serif;font-size:clamp(2rem,5vw,3rem);color:var(--forest);text-decoration:none;font-weight:700}
+footer{background:#0f2e28;color:#cfe0d9;text-align:center;padding:28px 16px;font-size:.93rem}
+.callbar{display:none}
+@media (max-width:760px){
+ .about,.contact{grid-template-columns:1fr}
+ nav{display:none}
+ .hero .w{padding-bottom:90px}
+ section{padding:56px 0}
+ .callbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--dawn);text-align:center;padding:12px;font-weight:700}
+ .callbar a{color:#2a1d05;text-decoration:none}
+ body{padding-bottom:50px}
+}
 </style>
 </head>
 <body>
 <header>
   <div class="bar">
-    <a class="brand" href="#top"><img src="logo.jpg" alt="A Different Path Counseling logo"><span>A Different Path Counseling, PLLC</span></a>
-    <nav aria-label="Main">
-      <a href="#about">About</a><a href="#services">Services</a><a href="#team">Our Team</a><a href="#programs">Programs</a><a href="#fees">Insurance &amp; Fees</a><a href="#careers">Careers</a><a href="#resources">Resources</a><a href="#contact">Contact</a>
-    </nav>
+    <a class="brand" href="#top"><img src="logo.jpg" alt="A Different Path Counseling logo"><span>A Different Path Counseling</span></a>
+    <nav aria-label="Main"><a href="#services">Services</a><a href="#team">Our team</a><a href="#programs">Programs</a><a href="#fees">Insurance &amp; fees</a><a href="#careers">Careers</a><a href="#contact">Contact</a></nav>
   </div>
-  <div class="crisis">In crisis? Call or text <strong>988</strong> (Suicide &amp; Crisis Lifeline). In an emergency, call <strong>911</strong>.</div>
 </header>
 
 <main id="top">
 <div class="hero">
-  <h1>Find Hope and Healing</h1>
-  <p>Now accepting new counseling and peer support clients!</p>
-  <a class="btn" href="#contact">Get in touch</a>
-</div>
-
-<section id="about"><div class="w">
-  <h2>About A Different Path Counseling, PLLC</h2>
-  <div class="grid">
-    <div class="card"><h3>Our Mission</h3><p>Helping each person find relief through community and empowerment.</p></div>
-    <div class="card"><h3>Our Values</h3><p>Integrity, Compassion, Belonging, Growth, Sensitivity, Humility</p></div>
+  <svg class="trail" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 130 C 180 130, 220 40, 420 60 S 700 130, 860 80 S 1080 20, 1190 40"/><circle cx="1190" cy="40" r="9"/></svg>
+  <div class="w">
+    <h1>Find hope and healing</h1>
+    <p>Counseling and peer support in Monroe and by telehealth. We are accepting new clients.</p>
+    <div class="btns"><a class="btn" href="tel:3608632913">Call (360) 863-2913</a><a class="btn alt" href="#services">See our services</a></div>
   </div>
+</div>
+<div class="crisis">In crisis? Call or text <strong>988</strong>. In an emergency, call <strong>911</strong>.</div>
+
+<section id="about"><div class="w about">
+  <div>
+    <h2>Helping each person find relief through community and empowerment</h2>
+    <p class="lead">Our team of licensed therapists has years of experience helping individuals and families navigate life's challenges, including anxiety, depression, trauma, and relationship issues.</p>
+  </div>
+  <div><p><strong>What we value</strong></p><div class="values"><span>Integrity</span><span>Compassion</span><span>Belonging</span><span>Growth</span><span>Sensitivity</span><span>Humility</span></div></div>
 </div></section>
 
-<section id="services"><div class="w">
-  <h2>Services Provided</h2>
-  <div class="grid">
-    <div class="card"><h3>Peer Support</h3><p>In-person and telehealth</p></div>
-    <div class="card"><h3>Individual Therapy</h3><p>In-person and telehealth</p></div>
-    <div class="card"><h3>Couples Counseling</h3><p>In-person and telehealth</p></div>
-    <div class="card"><h3>Behavior Support Programs</h3><p>In-person at long-term facilities</p></div>
-    <div class="card"><h3>Psychiatric Evaluation / Medication Management</h3><p>Telehealth only</p></div>
-  </div>
-  <p>Our team of licensed therapists has years of experience helping individuals and families navigate life's challenges. We specialize in a wide range of areas, including anxiety, depression, trauma, and relationship issues.</p>
+<section id="services" class="band"><div class="w">
+  <h2>Services</h2>
+  <ul class="svc">
+    <li><strong>Peer support</strong><span>In person and telehealth</span></li>
+    <li><strong>Individual therapy</strong><span>In person and telehealth</span></li>
+    <li><strong>Couples counseling</strong><span>In person and telehealth</span></li>
+    <li><strong>Behavior support programs</strong><span>In person at long-term facilities</span></li>
+    <li><strong>Psychiatric evaluation and medication management</strong><span>Telehealth only</span></li>
+  </ul>
 </div></section>
 
 <section id="team"><div class="w">
-  <h2>Our Team</h2>
-  <div class="grid">
-    <div class="card">
-      <img class="ph" src="crystal.jpg" alt="Photo of Crystal W. Hamilton, LMHC" loading="lazy"><h3>Crystal W. Hamilton, LMHC</h3><p class="role">Founder and Director of Clinical Services</p>
-      <p>Since 2004, Crystal has worked in the behavioral health field in a variety of settings, first with children and then with adult and older adult populations. She has worked in the Residential Support Waiver Behavior Support Program as a clinician, then supervisor at a community mental health agency, and contracted with a skilled nursing facility in private practice before forming A Different Path Counseling, PLLC as a behavioral health agency to serve participants in Snohomish County.</p>
-      <p>In addition to being Clinical Director, Crystal provides individual and couples therapy to adults in person and via telehealth. In therapy, we will work together to help you find relief and overcome obstacles in your life. A therapeutic approach is chosen by what will suit you best. Modalities used in session include Cognitive Behavioral Therapy, Lifespan Integration, Gottman Method, and Emotion Freedom Techniques/Tapping. Crystal has a passion for working with couples affected by substance use disorders and codependency. Somatic approaches are used to address attachment injuries and past trauma. Crystal specializes in Religious Trauma/Spiritual Abuse and has a secular stance in the therapeutic relationship.</p>
-    </div>
-    <div class="card">
-      <img class="ph" src="lindsey.jpg" alt="Photo of Lindsey Chatfield, LMHCA" loading="lazy"><h3>Lindsey Chatfield, LMHCA</h3><p class="role">Telehealth individual counseling (telehealth only)</p>
-      <p>As a licensed mental health counselor associate (LMHCA), I am passionate about meeting individuals where they are at. By addressing the whole person, I believe the mind, body and spirit can reveal patterns in our experiences that shape us into who we are today. Using evidence-based practices, I will tailor each session and technique to create resolution and awareness in your life. With my experience working with individuals seeking various avenues of support through counseling, I am confident I can support you in your endeavors. I have 5 years of education around mental health and psychology where I have learned different skills to be the best provider possible.</p>
-    </div>
-    <div class="card">
-      <img class="ph" src="bethany.jpg" alt="Photo of Bethany Simpson, BS" loading="lazy"><h3>Bethany Simpson, BS</h3><p class="role">RSW Behavior Support Program Manager</p>
-      <p>In 2014, Bethany began her career in community mental health as a Vocational Specialist, providing employment support to clients with behavioral health disorders who wanted to find jobs. She loves working closely with people who are often misunderstood and marginalized, and she has worked in residential care providing one-to-one support, group activities and outings. Bethany loves to connect with community members and services to create opportunities for her clients.</p>
-      <p>In 2021, Bethany began working at ADPC as a clinician in the RSW Behavior Support program and was later promoted to Program Manager. Her primary goal as a mental health provider is to ensure that everyone she works with is recognized for their inherent value as a human being, not just for their diagnosis. The team at ADPC shares that mission.</p>
-    </div>
-    <div class="card">
-      <img class="ph" src="jacob.jpg" alt="Photo of Jacob O'Neill, CPC" loading="lazy"><h3>Jacob O'Neill, CPC</h3><p class="role">Certified Peer Counselor</p>
-      <p>"I am passionate about meeting people where they are at with a trauma-informed approach. I have experience working at a residential substance use disorder facility. I have over 14 years of lived experience with my own personal recovery story. Peer support and trauma-informed care are foundational to my core beliefs. I believe connection, community, intention and self-esteem are the pillars of recovery and reaching a person's full potential."</p>
-      <p class="note">Accepts Medicaid: Coordinated Care and Community Health Plan of Washington.</p>
-    </div>
-    <div class="card">
-      <img class="ph" src="rose.jpg" alt="Photo of Rose Holm Mitchell, CPC" loading="lazy"><h3>Rose Holm Mitchell, CPC</h3><p class="role">Certified Peer Counselor</p>
-      <p><em>I believe people need people.</em> For years, I've had the privilege of walking alongside individuals and families through some of life's hardest seasons. I've witnessed the pain of addiction and mental health challenges, but I've also seen people heal, reconnect, grow, and find hope again. As a Certified Peer Support Specialist, I believe everyone deserves someone who will listen, believe in them, encourage them, and remind them of the strengths they may have forgotten.</p>
-      <p>I support people as they find their own path, whether that means beginning recovery, staying connected, rebuilding relationships, setting goals, finding resources, or simply getting through a difficult day. I also believe families need support, and I offer a safe, compassionate space where families can talk, learn, heal, and move forward together. I call myself a "hope peddler" because I want to carry hope wherever I go. You matter. You belong. You are not alone.</p>
-    </div>
-    <div class="card">
-      <img class="ph" src="lournie.jpg" alt="Photo of Lournielyn Juario, BS" loading="lazy"><h3>Lournielyn Juario, BS</h3><p class="role">Healthcare Virtual Assistant</p>
-      <p>Lournielyn holds a BS in Psychology and has a background in mental health clinic operations and hospital HR. At A Different Path Counseling, PLLC she plays a crucial role in ensuring seamless operations and supporting the counseling team.</p>
-    </div>
+  <h2>Meet our team</h2>
+  <p class="lead">Every person here believes you are more than your diagnosis.</p>
+  <div class="people">
+<article class="person"><img src="crystal.jpg" alt="Photo of Crystal W. Hamilton, LMHC" loading="lazy"><div class="pi"><h3>Crystal W. Hamilton, LMHC</h3><p class="role">Founder and Director of Clinical Services</p><details><summary>Read bio</summary><div class="bio"><p>Since 2004, Crystal has worked in the behavioral health field in a variety of settings, first with children and then with adult and older adult populations. She has worked in the Residential Support Waiver Behavior Support Program as a clinician, then supervisor at a community mental health agency, and contracted with a skilled nursing facility in private practice before forming A Different Path Counseling, PLLC as a behavioral health agency to serve participants in Snohomish County.</p>
+      <p>In addition to being Clinical Director, Crystal provides individual and couples therapy to adults in person and via telehealth. In therapy, we will work together to help you find relief and overcome obstacles in your life. A therapeutic approach is chosen by what will suit you best. Modalities used in session include Cognitive Behavioral Therapy, Lifespan Integration, Gottman Method, and Emotion Freedom Techniques/Tapping. Crystal has a passion for working with couples affected by substance use disorders and codependency. Somatic approaches are used to address attachment injuries and past trauma. Crystal specializes in Religious Trauma/Spiritual Abuse and has a secular stance in the therapeutic relationship.</p></div></details></div></article>
+<article class="person"><img src="lindsey.jpg" alt="Photo of Lindsey Chatfield, LMHCA" loading="lazy"><div class="pi"><h3>Lindsey Chatfield, LMHCA</h3><p class="role">Telehealth individual counseling (telehealth only)</p><details><summary>Read bio</summary><div class="bio"><p>As a licensed mental health counselor associate (LMHCA), I am passionate about meeting individuals where they are at. By addressing the whole person, I believe the mind, body and spirit can reveal patterns in our experiences that shape us into who we are today. Using evidence-based practices, I will tailor each session and technique to create resolution and awareness in your life. With my experience working with individuals seeking various avenues of support through counseling, I am confident I can support you in your endeavors. I have 5 years of education around mental health and psychology where I have learned different skills to be the best provider possible.</p></div></details></div></article>
+<article class="person"><img src="bethany.jpg" alt="Photo of Bethany Simpson, BS" loading="lazy"><div class="pi"><h3>Bethany Simpson, BS</h3><p class="role">RSW Behavior Support Program Manager</p><details><summary>Read bio</summary><div class="bio"><p>In 2014, Bethany began her career in community mental health as a Vocational Specialist, providing employment support to clients with behavioral health disorders who wanted to find jobs. She loves working closely with people who are often misunderstood and marginalized, and she has worked in residential care providing one-to-one support, group activities and outings. Bethany loves to connect with community members and services to create opportunities for her clients.</p>
+      <p>In 2021, Bethany began working at ADPC as a clinician in the RSW Behavior Support program and was later promoted to Program Manager. Her primary goal as a mental health provider is to ensure that everyone she works with is recognized for their inherent value as a human being, not just for their diagnosis. The team at ADPC shares that mission.</p></div></details></div></article>
+<article class="person"><img src="jacob.jpg" alt="Photo of Jacob O'Neill, CPC" loading="lazy"><div class="pi"><h3>Jacob O'Neill, CPC</h3><p class="role">Certified Peer Counselor</p><details><summary>Read bio</summary><div class="bio"><p>"I am passionate about meeting people where they are at with a trauma-informed approach. I have experience working at a residential substance use disorder facility. I have over 14 years of lived experience with my own personal recovery story. Peer support and trauma-informed care are foundational to my core beliefs. I believe connection, community, intention and self-esteem are the pillars of recovery and reaching a person's full potential."</p>
+      <p class="note">Accepts Medicaid: Coordinated Care and Community Health Plan of Washington.</p></div></details></div></article>
+<article class="person"><img src="rose.jpg" alt="Photo of Rose Holm Mitchell, CPC" loading="lazy"><div class="pi"><h3>Rose Holm Mitchell, CPC</h3><p class="role">Certified Peer Counselor</p><details><summary>Read bio</summary><div class="bio"><p><em>I believe people need people.</em> For years, I've had the privilege of walking alongside individuals and families through some of life's hardest seasons. I've witnessed the pain of addiction and mental health challenges, but I've also seen people heal, reconnect, grow, and find hope again. As a Certified Peer Support Specialist, I believe everyone deserves someone who will listen, believe in them, encourage them, and remind them of the strengths they may have forgotten.</p>
+      <p>I support people as they find their own path, whether that means beginning recovery, staying connected, rebuilding relationships, setting goals, finding resources, or simply getting through a difficult day. I also believe families need support, and I offer a safe, compassionate space where families can talk, learn, heal, and move forward together. I call myself a "hope peddler" because I want to carry hope wherever I go. You matter. You belong. You are not alone.</p></div></details></div></article>
+<article class="person"><img src="lournie.jpg" alt="Photo of Lournielyn Juario, BS" loading="lazy"><div class="pi"><h3>Lournielyn Juario, BS</h3><p class="role">Healthcare Virtual Assistant</p><details><summary>Read bio</summary><div class="bio"><p>Lournielyn holds a BS in Psychology and has a background in mental health clinic operations and hospital HR. At A Different Path Counseling, PLLC she plays a crucial role in ensuring seamless operations and supporting the counseling team.</p></div></details></div></article>
   </div>
 </div></section>
 
-<section id="programs"><div class="w">
+<section id="programs" class="band"><div class="w">
   <h2>Programs</h2>
-  <div class="grid">
+  <div class="progs">
+
     <div class="card">
       <h3>Residential Service Waiver (RSW) Behavior Support Program</h3>
       <p><strong>What is RSW?</strong> RSW Behavior Support is a DSHS program that supports adults living in adult family homes who have combined complex medical and behavioral health issues. It helps participants meet their needs, reduce future hospitalizations, and live safely in the community. ADPC staff also work closely with caregivers to model, skill-train and create strategies to manage behavioral issues that affect housing stability.</p>
@@ -134,18 +166,19 @@ footer a{color:#fff}
         <li><strong>Text/Email:</strong> online support for people with busy schedules or who prefer it.</li>
       </ul>
     </div>
+  
   </div>
 </div></section>
 
 <section id="fees"><div class="w">
-  <h2>Insurance &amp; Fee Schedule</h2>
-  <p>We are here to help you achieve your goals and live a happier life. Please review each team member below for fees, accepted insurance and payment methods.</p>
-  <h3>Insurance accepted (most team members)</h3>
-  <p>Coordinated Care Medicaid, Ambetter Washington, Molina Medicaid and Marketplace, Community Health Plan of Washington.</p>
-  <h3>Crystal W. Hamilton, LMHC: in-network insurances</h3>
-  <p>Ambetter Washington, Aetna, Carelon Behavioral Health, Coordinated Care Medicaid, Cigna, Kaiser Permanente, Molina Marketplace &amp; Medicaid, Optum Medicaid WA, Premera Blue Cross Washington, Quest Behavioral Health, Regence BlueShield of Washington, United Healthcare (Optum), United Healthcare Medicare Advantage.</p>
-  <h3>Fees</h3>
-  <table>
+  <h2>Insurance and fees</h2>
+  <p class="lead">Please review each team member below for fees, accepted insurance and payment methods.</p>
+  <h3 style="margin-top:26px">Accepted by most team members</h3>
+  <ul class="chips"><li>Coordinated Care Medicaid</li><li>Ambetter Washington</li><li>Molina Medicaid and Marketplace</li><li>Community Health Plan of Washington</li></ul>
+  <h3>In network with Crystal W. Hamilton, LMHC</h3>
+  <ul class="chips"><li>Ambetter Washington</li><li>Aetna</li><li>Carelon Behavioral Health</li><li>Coordinated Care Medicaid</li><li>Cigna</li><li>Kaiser Permanente</li><li>Molina Marketplace and Medicaid</li><li>Optum Medicaid WA</li><li>Premera Blue Cross Washington</li><li>Quest Behavioral Health</li><li>Regence BlueShield of Washington</li><li>United Healthcare (Optum)</li><li>United Healthcare Medicare Advantage</li></ul>
+  <h3 style="margin-bottom:12px">Fees</h3>
+  <div class="tw"><table>
     <tr><th>Service</th><th>Fee</th><th>Details</th></tr>
     <tr><td>Individual counseling (licensed counselor)</td><td>$170</td><td>60 min, in person or telehealth</td></tr>
     <tr><td>Individual and couples (associate-level counselor)</td><td>$80</td><td>Telehealth only</td></tr>
@@ -155,42 +188,48 @@ footer a{color:#fff}
     <tr><td>Peer support: group</td><td>$62</td><td>Each participant pays privately; some insurances accepted</td></tr>
     <tr><td>Peer support: text/email</td><td>$44</td><td>Monthly private-pay fee for unlimited text and email peer support</td></tr>
     <tr><td>Peer support: Wellness Circle</td><td>$260</td><td>Long-term facilities contract for a monthly peer-led workshop</td></tr>
-  </table>
-  <p class="note">Fees and accepted insurance are as listed on our previous website. Please call to confirm before scheduling.</p>
+  </table></div>
+  <p class="note">Please call to confirm fees and accepted insurance before scheduling.</p>
 </div></section>
 
-<section id="careers"><div class="w">
+<section id="careers" class="dark"><div class="w">
   <h2>Careers</h2>
-  <p><strong>No open positions at this time.</strong> Are you compassionate, reliable, and eager to make a positive impact in people's lives? Check back for openings on our counseling team.</p>
-  <div class="grid">
+  <p class="lead" style="color:#d6e6df"><strong>No open positions right now.</strong> If you are compassionate, reliable, and want to make a difference in people's lives, check back for openings on our counseling team.</p>
+  <div class="progs">
+
     <div class="card"><h3>Paid time off</h3><ul><li>10 paid holidays and 2 floating holidays</li><li>10 days vacation in year 1, 15 in year 2, 20 from year 5</li><li>16 hours professional time</li><li>3 days bereavement leave</li></ul></div>
     <div class="card"><h3>Planning for the future</h3><ul><li>100% paid medical, dental and vision</li><li>Long-term disability and life insurance</li><li>SIMPLE IRA with 3% match</li></ul></div>
     <div class="card"><h3>Growth and support</h3><ul><li>Comprehensive training</li><li>Opportunities for advancement</li><li>Flexible scheduling</li><li>Positive, supportive work environment</li></ul></div>
     <div class="card"><h3>Money in your pocket</h3><ul><li>$100 professional fund for licensure costs and books</li><li>Tuition/student loan reimbursement: $5,000 every 5 years</li><li>Mileage reimbursement</li><li>Retention bonus: $500 year 1, $1,000 year 2, $1,500 year 3</li></ul></div>
+  
   </div>
 </div></section>
 
-<section id="resources"><div class="w">
+<section id="resources" class="band"><div class="w">
   <h2>Resources</h2>
-  <ul>
+  <ul class="links">
     <li><a href="https://988lifeline.org/get-help/" rel="noopener">988 Crisis Line</a></li>
     <li><a href="https://www.crisisconnections.org/wa-warm-line/" rel="noopener">Crisis Connections (WA Warm Line)</a></li>
     <li><a href="https://wa211.org/" rel="noopener">211 Washington Resources</a></li>
     <li><a href="https://www.empathyparadigm.com/directory" rel="noopener">Religious Trauma Therapist Directory</a></li>
   </ul>
-  <p class="note">Intake documents (Consent for Treatment, Patient Rights and Patient Financial Agreement; Notice of Privacy Practices) are available from our office. [TODO: add download links once the files are uploaded.]</p>
+  <p class="note">Intake documents (Consent for Treatment, Patient Rights and Patient Financial Agreement; Notice of Privacy Practices) are available from our office.</p>
 </div></section>
 
-<section id="contact"><div class="w">
-  <h2>Contact</h2>
-  <p><strong>A Different Path Counseling, PLLC</strong><br>101 E Main St, Ste 208, Monroe, WA 98272<br>Phone: <a href="tel:3608632913">(360) 863-2913</a></p>
-  <p>Follow us: <a href="https://www.instagram.com/adifferentpathcounseling/" rel="noopener">Instagram</a> &middot; <a href="https://www.facebook.com/108570138961392" rel="noopener">Facebook</a></p>
-  <p class="note">Please do not send private health information by email or through social media. Call us to schedule.</p>
+<section id="contact"><div class="w contact">
+  <div>
+    <h2>Ready when you are</h2>
+    <p><a class="bigtel" href="tel:3608632913">(360) 863-2913</a></p>
+    <p class="note">Please do not send private health information by email or through social media. Call us to schedule.</p>
+  </div>
+  <div>
+    <p><strong>A Different Path Counseling, PLLC</strong><br>101 E Main St, Ste 208<br>Monroe, WA 98272</p>
+    <p><a href="https://www.instagram.com/adifferentpathcounseling/" rel="noopener">Instagram</a> &middot; <a href="https://www.facebook.com/108570138961392" rel="noopener">Facebook</a></p>
+  </div>
 </div></section>
 </main>
 
-<footer>
-  <div>&copy; 2026 A Different Path Counseling, PLLC. All rights reserved.</div>
-</footer>
+<footer>&copy; 2026 A Different Path Counseling, PLLC. All rights reserved.</footer>
+<div class="callbar"><a href="tel:3608632913">Call (360) 863-2913</a></div>
 </body>
 </html>
